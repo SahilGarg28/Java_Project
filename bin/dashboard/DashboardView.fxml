@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="500.0" minWidth="500.0" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dashboard.DashboardViewController">
+   <children>
+      <ImageView fitHeight="854.0" fitWidth="1208.0" layoutX="-1.0" layoutY="-50.0" opacity="0.3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bg.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="73.0" layoutY="14.0" prefHeight="78.0" prefWidth="520.0" text="Newspaper Agency" underline="true">
+         <font>
+            <Font name="Algerian" size="49.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.35" height="154.72" radius="74.5275" width="145.39">
+               <input>
+                  <Glow level="0.66" />
+               </input>
+            </InnerShadow>
+         </effect>
+      </Label>
+      <Separator layoutY="101.0" prefHeight="11.0" prefWidth="1200.0" style="-fx-background-color: black;" />
+      <ImageView fitHeight="142.0" fitWidth="207.0" layoutX="29.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bg.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="171.0" fitWidth="169.0" layoutX="40.0" layoutY="137.0" onMouseClicked="#doarea" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Navigation.png" />
+         </image>
+         <effect>
+            <Lighting specularConstant="0.93" specularExponent="33.17" surfaceScale="7.35">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="142.0" fitWidth="200.0" layoutX="261.0" layoutY="139.0" onMouseClicked="#dopaper" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bg.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="142.0" fitWidth="207.0" layoutX="487.0" layoutY="140.0" onMouseClicked="#dohawker" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bg.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="142.0" fitWidth="207.0" layoutX="714.0" layoutY="140.0" onMouseClicked="#showhawker" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bg.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="158.0" fitWidth="124.0" layoutX="525.0" layoutY="138.0" onMouseClicked="#dohawker" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@hawker.jpg" />
+         </image>
+         <effect>
+            <Lighting specularConstant="0.93" specularExponent="33.17" surfaceScale="7.35">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="200.0" layoutX="261.0" layoutY="188.0" onMouseClicked="#dopaper" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Roll-of-Newspaper.jpg" />
+         </image>
+         <effect>
+            <Lighting specularConstant="0.93" specularExponent="33.17" surfaceScale="7.35">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="142.0" fitWidth="178.0" layoutX="729.0" layoutY="140.0" onMouseClicked="#showhawker" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@people.png" />
+         </image>
+         <effect>
+            <Lighting specularConstant="0.93" specularExponent="33.17" surfaceScale="7.35">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="142.0" fitWidth="207.0" layoutX="975.0" layoutY="147.0" onMouseClicked="#dobillgen" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bg.jpg" />
+         </image>
+      </ImageView>
+      <Separator layoutX="939.0" layoutY="107.0" orientation="VERTICAL" prefHeight="597.0" prefWidth="6.0" style="-fx-background-color: black;" />
+      <ImageView fitHeight="177.0" fitWidth="169.0" layoutX="997.0" layoutY="132.0" onMouseClicked="#dobillgen" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@billgenerator.png" />
+         </image>
+         <effect>
+            <Lighting specularConstant="0.93" specularExponent="33.17" surfaceScale="7.35">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="142.0" fitWidth="207.0" layoutX="979.0" layoutY="335.0" onMouseClicked="#dobillcoll" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bg.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="142.0" fitWidth="166.0" layoutX="1003.0" layoutY="335.0" onMouseClicked="#dobillcoll" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bill%20collection.png" />
+         </image>
+         <effect>
+            <Lighting specularConstant="0.93" specularExponent="33.17" surfaceScale="7.35">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="142.0" fitWidth="207.0" layoutX="979.0" layoutY="516.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bg.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="177.0" fitWidth="257.0" layoutX="951.0" layoutY="511.0" onMouseClicked="#showstatus" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bill%20status.png" />
+         </image>
+         <effect>
+            <Lighting specularConstant="0.93" specularExponent="33.17" surfaceScale="7.35">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="142.0" fitWidth="207.0" layoutX="29.0" layoutY="422.0" onMouseClicked="#docustomer" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bg.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="135.0" fitWidth="198.0" layoutX="30.0" layoutY="432.0" onMouseClicked="#docustomer" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@customers.png" />
+         </image>
+         <effect>
+            <Lighting specularConstant="0.93" specularExponent="33.17" surfaceScale="7.35">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="142.0" fitWidth="207.0" layoutX="259.0" layoutY="422.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bg.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="142.0" fitWidth="198.0" layoutX="262.0" layoutY="423.0" onMouseClicked="#showcustomer" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@customers%20display.png" />
+         </image>
+         <effect>
+            <Lighting specularConstant="0.93" specularExponent="33.17" surfaceScale="7.35">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Separator layoutY="386.0" prefHeight="11.0" prefWidth="946.0" style="-fx-background-color: black;" />
+      <Label layoutX="53.0" layoutY="292.0" prefHeight="34.0" prefWidth="152.0" text="Area Master">
+         <font>
+            <Font name="Bell MT Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="277.0" layoutY="292.0" prefHeight="34.0" prefWidth="166.0" text="Paper Master">
+         <font>
+            <Font name="Bell MT Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="503.0" layoutY="292.0" prefHeight="34.0" prefWidth="169.0" text="Hawker Entry">
+         <font>
+            <Font name="Bell MT Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="723.0" layoutY="292.0" prefHeight="34.0" prefWidth="198.0" text="Hawker Display">
+         <font>
+            <Font name="Bell MT Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="578.0" prefHeight="34.0" prefWidth="198.0" text="Customer Entry">
+         <font>
+            <Font name="Bell MT Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="262.0" layoutY="578.0" prefHeight="34.0" prefWidth="222.0" text="Customer Display">
+         <font>
+            <Font name="Bell MT Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="1003.0" layoutY="292.0" prefHeight="34.0" prefWidth="198.0" text="Bill Generator">
+         <font>
+            <Font name="Bell MT Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="1003.0" layoutY="476.0" prefHeight="34.0" prefWidth="198.0" text="Bill Collection">
+         <font>
+            <Font name="Bell MT Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="1003.0" layoutY="658.0" prefHeight="34.0" prefWidth="198.0" text="Bill Status">
+         <font>
+            <Font name="Bell MT Bold" size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

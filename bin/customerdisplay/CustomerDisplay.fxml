@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="588.0" minWidth="650.0" prefHeight="670.0" prefWidth="650.0" style="-fx-background-color: #044F67;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="customerdisplay.CustomerDisplayController">
+   <children>
+      <Label prefHeight="60.0" prefWidth="650.0" style="-fx-alignment: center; -fx-background-color: rgb(77, 158, 179);" text="Customer's Visibility Area" textFill="#7c0000">
+         <font>
+            <Font name="Bell MT Bold" size="31.0" />
+         </font>
+      </Label>
+      <Button layoutX="369.0" layoutY="192.0" mnemonicParsing="false" onAction="#doshow" prefHeight="31.0" prefWidth="249.0" style="-fx-background-color: #b3d9ff;" text="Show All Records" textFill="#030102">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Bookman Old Style Bold" size="24.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tableview" layoutX="26.0" layoutY="256.0" prefHeight="400.0" prefWidth="600.0" tableMenuButtonVisible="true">
+         <effect>
+            <InnerShadow choke="0.4" color="#006bb0" height="47.24" radius="25.305" width="55.98" />
+         </effect>
+      </TableView>
+      <Separator layoutX="1.0" layoutY="244.0" prefHeight="0.0" prefWidth="650.0" />
+      <Label layoutX="25.0" layoutY="67.0" prefHeight="3.0" prefWidth="86.0" style="-fx-background-color: rgb(57, 198, 163);" text="Areas " textFill="#050383">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboarea" layoutX="25.0" layoutY="112.0" prefHeight="25.0" prefWidth="185.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow blurType="TWO_PASS_BOX" choke="0.4" color="#006bb0" radius="18.744999999999997" width="55.98" />
+         </effect>
+      </ComboBox>
+      <Label layoutX="25.0" layoutY="154.0" prefHeight="3.0" prefWidth="86.0" style="-fx-background-color: rgb(57, 198, 163);" text="Paper" textFill="#050383">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="combopaper" layoutX="25.0" layoutY="199.0" prefHeight="22.0" prefWidth="185.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow blurType="TWO_PASS_BOX" choke="0.4" color="#006bb0" radius="18.744999999999997" width="55.98" />
+         </effect>
+      </ComboBox>
+      <Button layoutX="230.0" layoutY="109.0" mnemonicParsing="false" onAction="#doshowar" prefHeight="38.0" prefWidth="105.0" style="-fx-background-color: #b3d9ff;" text="Search" textFill="#525252">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Bookman Old Style Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="230.0" layoutY="196.0" mnemonicParsing="false" onAction="#doshowpapr" prefHeight="38.0" prefWidth="105.0" style="-fx-background-color: #b3d9ff;" text="Search" textFill="#525252">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Bookman Old Style Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="394.0" layoutY="109.0" mnemonicParsing="false" onAction="#doexport" prefHeight="38.0" prefWidth="199.0" style="-fx-background-color: #b3d9ff;" text="Export to Excel" textFill="#525252">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Bookman Old Style Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
